@@ -16,7 +16,7 @@ const Banner = () => {
         {/* Text Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-4xl font-bold text-orange-400 mb-2">
-            Strata Properties
+            Sanctum Properties
           </h1>
           <p className="text-lg font-light">Our handpicked portfolio</p>
         </div>
@@ -121,7 +121,7 @@ const PropertyPage = () => {
       />
 
       {/* Property Cards */}
-      <div className="grid grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-3 gap-4 mt-6 my-6">
         {filteredProperties.map((property) => (
           <PropertyCard key={property.id} property={property} />
         ))}

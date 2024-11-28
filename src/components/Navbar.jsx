@@ -19,7 +19,7 @@ const Navbar = () => {
           <li>
             <a href="/about-us" className="hover:text-blue-300 relative group">
               About Us
-              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute  top-4 left-0 bottom-0  w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>
           <li>
@@ -28,7 +28,7 @@ const Navbar = () => {
               className="hover:text-blue-300 relative group"
             >
               Properties
-              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute left-0 bottom-0 top-4 w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </Link>
           </li>
           <li className="relative group">
@@ -69,39 +69,16 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="/stratapedia" className="hover:text-blue-300">
-              pedia
-            </a>
-          </li>
-          <li className="relative group">
+        
+          <li className="relative ">
             <a
-              href="#"
+              href="/contact-us"
               className="hover:text-blue-300 flex items-center"
             >
-              More
-              <FontAwesomeIcon icon={faCaretDown} className="ml-1" />
+              contact us
+             
             </a>
-            <ul className="absolute flex-col justify-start items-start top-3 left-0 mt-2 hidden group-hover:flex bg-white text-black rounded z-50 shadow-lg py-2">
-              <li>
-                <a
-                  href="/contact-us"
-                  className="block pr-4 py-2 hover:bg-gray-100 flex items-center"
-                >
-                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/careers"
-                  className="block pr-4 py-2 hover:bg-gray-100 flex items-center"
-                >
-                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
-                  Careers
-                </a>
-              </li>
-            </ul>
+           
           </li>
         </ul>
 
@@ -157,12 +134,7 @@ const Navbar = () => {
               Properties
             </a>
           </li>
-          <li>
-            <a href="/stratapedia" className="hover:text-blue-300 relative group">
-              pedia
-              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            </a>
-          </li>
+     
           <li>
             <Link to="/contact-us" className="hover:text-blue-300">
               Contact Us
