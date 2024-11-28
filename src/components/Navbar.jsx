@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link, Links } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +17,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-6 text-white text-sm font-semibold">
           <li>
-            <a href="/about-us" className="hover:text-blue-300  relative group">
+            <a href="/about-us" className="hover:text-blue-300 relative group">
               About Us
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
@@ -35,51 +37,41 @@ const Navbar = () => {
               className="hover:text-blue-300 flex items-center"
             >
               Investment Options
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1 w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <FontAwesomeIcon icon={faCaretDown} className="ml-1" />
             </a>
-            <ul className="absolute top-full left-0 mt-2 hidden group-hover:block z-40 bg-white text-black rounded shadow-lg py-2">
+            <ul className="absolute top-3 left-0 mt-2 hidden group-hover:block z-40 bg-white text-black rounded shadow-lg py-2">
               <li>
                 <a
                   href="/strata-fip"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 flex items-center"
                 >
-                  Strata FIP
+                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
+                  FIP
                 </a>
               </li>
               <li>
                 <a
                   href="/strata-edge"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 flex items-center"
                 >
-                  Strata Edge
+                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
+                  Edge
                 </a>
               </li>
               <li>
                 <a
                   href="/strata-growth"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 flex items-center"
                 >
-                  Strata Growth
+                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
+                  Growth
                 </a>
               </li>
             </ul>
           </li>
           <li>
             <a href="/stratapedia" className="hover:text-blue-300">
-              Stratapedia
+              pedia
             </a>
           </li>
           <li className="relative group">
@@ -88,35 +80,24 @@ const Navbar = () => {
               className="hover:text-blue-300 flex items-center"
             >
               More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1 w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <FontAwesomeIcon icon={faCaretDown} className="ml-1" />
             </a>
-            <ul className="absolute flex-col  justify-start items-start top-3 left-0 mt-2 hidden group-hover:flex bg-white text-black rounded z-50 shadow-lg py-2">
+            <ul className="absolute flex-col justify-start items-start top-3 left-0 mt-2 hidden group-hover:flex bg-white text-black rounded z-50 shadow-lg py-2">
               <li>
                 <a
                   href="/contact-us"
-                  className="block pr-4 py-2 hover:bg-gray-100"
+                  className="block pr-4 py-2 hover:bg-gray-100 flex items-center"
                 >
+                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
                   Contact Us
                 </a>
               </li>
               <li>
                 <a
                   href="/careers"
-                  className="block pr-4 py-2 hover:bg-gray-100"
+                  className="block pr-4 py-2 hover:bg-gray-100 flex items-center"
                 >
+                  <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
                   Careers
                 </a>
               </li>
@@ -140,7 +121,11 @@ const Navbar = () => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                menuOpen
+                  ? "M6 18L18 6M6 6l12 12"
+                  : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>
@@ -173,8 +158,8 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/stratapedia" className="hover:text-blue-300  relative group">
-              Stratapedia
+            <a href="/stratapedia" className="hover:text-blue-300 relative group">
+              pedia
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>

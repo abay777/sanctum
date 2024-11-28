@@ -1,5 +1,6 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignInAlt, faQuestionCircle, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -183,6 +184,10 @@ const features = [
   },
 ];
 
+
+
+
+
 const LookingForSomethingElse = () => {
   return (
     <div className="bg-white py-10">
@@ -201,10 +206,9 @@ const LookingForSomethingElse = () => {
             >
               {/* Icon */}
               <div className="bg-yellow-400 rounded-full p-4 mb-4">
-                <img
-                  src={feature.icon}
-                  alt="Feature Icon"
-                  className="w-10 h-10"
+                <FontAwesomeIcon
+                  icon={feature.icon}
+                  className="text-white text-2xl"
                 />
               </div>
               {/* Title */}
@@ -223,6 +227,7 @@ const LookingForSomethingElse = () => {
     </div>
   );
 };
+
   
 const OtherComponents = () => {
   return (

@@ -99,13 +99,13 @@ const HeroSection = () => {
         <div className="flex mt-4 sm:mt-0">
           <a href="#" className="mr-4">
             <img
-              src="https://via.placeholder.com/150x50"
+              src="https://investor.strataprop.com/assets/Icons/apple_store.svg"
               alt="Download on App Store"
             />
           </a>
           <a href="#">
             <img
-              src="https://via.placeholder.com/150x50"
+              src="https://investor.strataprop.com/assets/Icons/android_play_store.svg"
               alt="Get it on Google Play"
             />
           </a>
