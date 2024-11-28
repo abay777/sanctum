@@ -170,7 +170,7 @@ const features = [
   },
   {
     id: 2,
-    title: "Read our FAQs to learn more about how Strata works.",
+    title: "Read our FAQs to learn more about how Sanctum works.",
     buttonText: "FAQs",
     icon: "https://via.placeholder.com/50", // Replace with the golden question mark icon URL
     link: "/faqs", // Update with actual URL

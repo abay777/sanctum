@@ -48,7 +48,7 @@ const propertyData = [
     assetType: "Healthcare",
     status: "Fully Funded",
     funding: 100,
-    type: "Strata Growth",
+    type:"Sanctum Growth",
     imageUrl: "https://via.placeholder.com/300x200",
   },
   {

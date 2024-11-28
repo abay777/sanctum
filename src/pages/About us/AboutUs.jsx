@@ -11,14 +11,14 @@ const AboutUsBanner = () => {
         <div className="text-white lg:w-1/2 mb-8 lg:mb-0">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="text-lg font-light mb-6">
-            Strata was born from the powerful idea to democratize commercial
+            Sanctum was born from the powerful idea to democratize commercial
             real estate investing and unlock value for investors, at scale.
           </p>
           <a
             href="/invest"
             className="bg-white text-blue-900 font-semibold py-2 px-6 rounded shadow hover:bg-gray-200 transition"
           >
-            Start Investing
+            sanctum Investing
           </a>
         </div>
 
@@ -27,7 +27,7 @@ const AboutUsBanner = () => {
           <iframe
             className="w-full h-64 lg:h-96 rounded-md shadow"
             src="https://www.youtube.com/embed/example" // Replace 'example' with actual YouTube video ID
-            title="Strata's Amazing Journey"
+            title="Sanctum's Amazing Journey"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -107,7 +107,7 @@ const VisionMissionValues = () => {
         <div className="container mx-auto px-6 lg:px-20">
           {/* Section Title */}
           <h2 className="text-center text-white text-4xl font-bold mb-8">
-            A Glimpse into Life<span className="text-orange-400">@Strata</span>
+            A Glimpse into Life<span className="text-orange-400">@Sanctum</span>
           </h2>
   
           {/* Cards */}
