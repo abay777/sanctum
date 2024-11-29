@@ -39,8 +39,8 @@ const Navbar = () => {
               Investment Options
               <FontAwesomeIcon icon={faCaretDown} className="ml-1" />
             </a>
-            <ul className="absolute top-3 left-0 mt-2 hidden group-hover:block z-40 bg-white text-black rounded shadow-lg py-2">
-              <li>
+            <div className="absolute top-3 left-0 mt-2 hidden group-hover:block z-40 bg-white text-black rounded shadow-lg py-2">
+              <p>
                 <a
                   href="/strata-fip"
                   className="block px-4 py-2 hover:bg-gray-100 flex items-center"
@@ -48,8 +48,8 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
                   FIP
                 </a>
-              </li>
-              <li>
+              </p>
+              <p>
                 <a
                   href="/strata-edge"
                   className="block px-4 py-2 hover:bg-gray-100 flex items-center"
@@ -57,8 +57,8 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
                   Edge
                 </a>
-              </li>
-              <li>
+              </p>
+              <p>
                 <a
                   href="/strata-growth"
                   className="block px-4 py-2 hover:bg-gray-100 flex items-center"
@@ -66,17 +66,17 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
                   Growth
                 </a>
-              </li>
-            </ul>
+              </p>
+            </div>
           </li>
         
-          <li className="relative ">
+          <li className="relative group ">
             <a
               href="/contact-us"
               className="hover:text-blue-300 flex items-center"
             >
               contact us
-             
+              <span className="absolute  top-5 left-0 bottom-0  w-full h-[2px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
            
           </li>

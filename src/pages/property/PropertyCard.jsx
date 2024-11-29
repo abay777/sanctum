@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PropertyCard = ({ property }) => {
   return (
@@ -44,8 +45,8 @@ const PropertyCard = ({ property }) => {
         <button className="bg-blue-900 text-white px-4 py-2 rounded">
           Invest Now
         </button>
-        <button className="border border-blue-900 text-blue-900 px-4 py-2 rounded">
-          View Details
+        <button className="">
+          <Link to="/properties/123 " className="border border-blue-900 text-blue-900 px-4 py-2 rounded">View Details</Link>
         </button>
       </div>
     </div>

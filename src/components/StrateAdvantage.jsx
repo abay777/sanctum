@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChartLine, faEye, faHandshake, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 function StrataAdvantage() {
   return (
@@ -13,11 +15,7 @@ function StrataAdvantage() {
           {/* Data-Driven */}
           <div className="advantage-item text-white">
             <div className="icon bg-yellow-400 rounded-lg mx-auto p-4 w-16 h-16 flex items-center justify-center mb-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Data Driven Icon"
-                className="w-8 h-8"
-              />
+              <FontAwesomeIcon icon={faChartLine} className="text-blue-900 text-2xl" />
             </div>
             <h3 className="font-bold text-xl mb-2">Data-Driven</h3>
             <p className="text-sm">
@@ -29,11 +27,7 @@ function StrataAdvantage() {
           {/* Complete Transparency */}
           <div className="advantage-item text-white">
             <div className="icon bg-yellow-400 rounded-lg mx-auto p-4 w-16 h-16 flex items-center justify-center mb-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Transparency Icon"
-                className="w-8 h-8"
-              />
+              <FontAwesomeIcon icon={faEye} className="text-blue-900 text-2xl" />
             </div>
             <h3 className="font-bold text-xl mb-2">Complete Transparency</h3>
             <p className="text-sm">
@@ -45,11 +39,7 @@ function StrataAdvantage() {
           {/* End to End Management */}
           <div className="advantage-item text-white">
             <div className="icon bg-yellow-400 rounded-lg mx-auto p-4 w-16 h-16 flex items-center justify-center mb-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="End to End Icon"
-                className="w-8 h-8"
-              />
+              <FontAwesomeIcon icon={faHandshake} className="text-blue-900 text-2xl" />
             </div>
             <h3 className="font-bold text-xl mb-2">End to End Management</h3>
             <p className="text-sm">
@@ -61,11 +51,7 @@ function StrataAdvantage() {
           {/* Fully Digital Experience */}
           <div className="advantage-item text-white">
             <div className="icon bg-yellow-400 rounded-lg mx-auto p-4 w-16 h-16 flex items-center justify-center mb-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Digital Icon"
-                className="w-8 h-8"
-              />
+              <FontAwesomeIcon icon={faLaptop} className="text-blue-900 text-2xl" />
             </div>
             <h3 className="font-bold text-xl mb-2">Fully Digital Experience</h3>
             <p className="text-sm">
@@ -80,3 +66,4 @@ function StrataAdvantage() {
 }
 
 export default StrataAdvantage;
+

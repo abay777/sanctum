@@ -8,6 +8,9 @@ import Login from "../pages/login/Login";
 import Signup from "../pages/signUp/SignUp";
 import ContactUs from "../pages/contact us/ContactUs";
 import AboutUs from "../pages/About us/AboutUs";
+import PrivacyPolicy from "../pages/privacy policy/PrivacyPolicy";
+import ContentSwitcher from "../pages/privacy policy/PrivacyPolicy";
+import PropertyDetails from "../pages/property details/PropertyDetails";
 
 const AppRouter = () => {
   return (
@@ -20,7 +23,9 @@ const AppRouter = () => {
         <Route path="/sign-up" element={<Signup/>} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/privacy-policy" element={<ContentSwitcher/>} /> 
         <Route path="/properties" element={<Property/>} />
+        <Route path="/properties/:id" element={<PropertyDetails/>} />
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         
         {/* Catch-all route for undefined paths */}

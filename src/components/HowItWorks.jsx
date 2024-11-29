@@ -1,8 +1,6 @@
 import React from "react";
 import OurBackers from "./OurBankers";
 
-
-
 function RecentOpportunities() {
   const opportunities = [
     {
@@ -74,7 +72,9 @@ function RecentOpportunities() {
                 <h3 className="text-blue-900 text-lg font-bold mb-2">
                   {opportunity.title}
                 </h3>
-                <p className="text-gray-700 text-sm mb-4">{opportunity.location}</p>
+                <p className="text-gray-700 text-sm mb-4">
+                  {opportunity.location}
+                </p>
 
                 {/* IRR and Rental Yield */}
                 <div className="flex justify-between text-gray-700 text-sm mb-4">
@@ -109,8 +109,6 @@ function RecentOpportunities() {
     </div>
   );
 }
-
-
 
 function InvestmentOptions() {
   return (
@@ -185,74 +183,83 @@ function InvestmentOptions() {
   );
 }
 
-
-
-
-
-
-
-
-
-
-
 function HowItWorks() {
   return (
     <>
-        <div className="how-it-works-section bg-white py-12">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
-            {/* Text Section */}
-            <div className="text-section lg:w-1/2">
-            <h2 className="text-blue-900 text-3xl font-bold mb-4">How it works</h2>
-            <p className="text-blue-900 text-lg mb-8">
-                Investing with us is easy, transparent, & completely online!
+      <div className="bg-white py-12">
+        <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Section */}
+          <div>
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+              How it works
+            </h2>
+            <p className="text-lg text-blue-700 mb-8">
+              Investing with us is easy, transparent, & completely online!
             </p>
-            <div className="steps">
-                <div className="step mb-6">
-                <h3 className="text-yellow-600 text-xl font-bold">INVEST</h3>
-                <p className="text-blue-900">
-                    Invest in high-yield, Grade-A commercial assets.
-                </p>
+            <div className="space-y-8">
+              {/* Invest */}
+              <div className="relative pl-8">
+                <div className="absolute left-0 top-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold text-lg">
+                  I
                 </div>
-                <div className="step mb-6">
-                <h3 className="text-blue-900 text-xl font-bold">EARN</h3>
-                <p className="text-blue-900">
-                    Earn a passive income while building long-term wealth.
+                <h3 className="text-2xl font-bold text-blue-900">INVEST</h3>
+                <p className="text-sm text-blue-700">
+                  Invest in high-yield, Grade-A commercial assets.
                 </p>
+              </div>
+              {/* Earn */}
+              <div className="relative pl-8">
+                <div className="absolute left-0 top-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold text-lg">
+                  E
                 </div>
-                <div className="step mb-6">
-                <h3 className="text-blue-900 text-xl font-bold">TRACK</h3>
-                <p className="text-blue-900">
-                    Track your portfolio performance and get regular updates.
+                <h3 className="text-2xl font-bold text-blue-900">EARN</h3>
+                <p className="text-sm text-blue-700">
+                  Earn a passive income while building long-term wealth.
                 </p>
+              </div>
+              {/* Track */}
+              <div className="relative pl-8">
+                <div className="absolute left-0 top-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold text-lg">
+                  T
                 </div>
-                <div className="step">
-                <h3 className="text-blue-900 text-xl font-bold">SELL</h3>
-                <p className="text-blue-900">
-                    Make a profitable exit with our liquidity options.
+                <h3 className="text-2xl font-bold text-blue-900">TRACK</h3>
+                <p className="text-sm text-blue-700">
+                  Track your portfolio performance and get regular updates.
                 </p>
+              </div>
+              {/* Sell */}
+              <div className="relative pl-8">
+                <div className="absolute left-0 top-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold text-lg">
+                  S
                 </div>
+                <h3 className="text-2xl font-bold text-blue-900">SELL</h3>
+                <p className="text-sm text-blue-700">
+                  Make a profitable exit with our liquidity options.
+                </p>
+              </div>
             </div>
-            </div>
+          </div>
 
-            {/* Image Section */}
-            <div className="image-section lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-            <div className="phone-mockup relative">
-                <img
-                src="https://via.placeholder.com/250x500"
-                alt="Phone Mockup"
-                className="w-60"
-                />
-                <p className="text-sm text-center text-blue-900 mt-4">
-                All assets undergo a multi-level qualification process to get you
-                the best return possible.
-                </p>
+          {/* Right Section */}
+          <div className="relative">
+            <div className="w-64 h-96 bg-gray-300 rounded-lg shadow-lg mx-auto flex items-center justify-center">
+              <p className="text-blue-900 font-semibold text-lg">
+                Image Placeholder
+              </p>
             </div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-6 text-center text-sm text-blue-700">
+              <p>
+                All assets undergo a multi-level qualification process to get
+                you the best return possible.
+              </p>
             </div>
+          </div>
         </div>
-        </div>
-        <InvestmentOptions/>
-        <RecentOpportunities/>
-        <OurBackers/>
+      </div>
+
+      <InvestmentOptions />
+      <RecentOpportunities />
+      <OurBackers />
     </>
   );
 }

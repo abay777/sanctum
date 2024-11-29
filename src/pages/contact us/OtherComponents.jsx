@@ -1,82 +1,90 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignInAlt, faQuestionCircle, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
-
+import { faSignInAlt, faInfoCircle ,faEnvelope,
+   faTicketAlt , faHandshake, faBuilding 
+  ,faArrowRight, faUsers 
+  , faQuestionCircle} from "@fortawesome/free-solid-svg-icons";
 
 
 const NotAnInvestor = () => {
-    return (
-      <div className="bg-blue-900 text-white py-10">
-        <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold">Not an Investor?</h2>
-          <p className="text-lg font-light">
-            Our teams stand ready to help!
+  return (
+    <div className="bg-blue-900 text-white py-10">
+      {/* Header */}
+      <div className="text-center mb-6">
+        <h2 className="text-3xl font-bold">Not an Investor?</h2>
+        <p className="text-lg font-light">Our teams stand ready to help!</p>
+      </div>
+
+      {/* Options */}
+      <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-10">
+        {/* Become A Partner */}
+        <div className="bg-white text-center text-blue-900 rounded-lg shadow-md p-6">
+          <div className="mb-4">
+            <FontAwesomeIcon
+              icon={faHandshake}
+              className="text-yellow-500 text-4xl"
+            />
+          </div>
+          <h3 className="text-xl font-bold">Become A Partner</h3>
+          <p className="text-sm mt-2">
+            If you are a distributor/financial advisor/broker etc., and you
+            would like to partner with us.
           </p>
+          <button className="mt-4 bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+            Sign up
+          </button>
         </div>
-        <div className="flex justify-center space-x-10">
-          <div className="bg-white text-center text-blue-900 rounded-lg shadow-md p-6">
-            <div className="mb-4">
-              <img
-                src="https://via.placeholder.com/40"
-                alt="Partner Icon"
-                className="mx-auto"
-              />
-            </div>
-            <h3 className="text-xl font-bold">Become A Partner</h3>
-            <p className="text-sm mt-2">
-              If you are a distributor/financial advisor/broker etc., and you
-              would like to partner with us.
-            </p>
-            <button className="mt-4 bg-blue-900 text-white px-6 py-2 rounded-md">
-              Sign up
-            </button>
+
+        {/* Become A Seller */}
+        <div className="bg-white text-center text-blue-900 rounded-lg shadow-md p-6">
+          <div className="mb-4">
+            <FontAwesomeIcon
+              icon={faBuilding}
+              className="text-yellow-500 text-4xl"
+            />
           </div>
-          <div className="bg-white text-center text-blue-900 rounded-lg shadow-md p-6">
-            <div className="mb-4">
-              <img
-                src="https://via.placeholder.com/40"
-                alt="Seller Icon"
-                className="mx-auto"
-              />
-            </div>
-            <h3 className="text-xl font-bold">Become A Seller</h3>
-            <p className="text-sm mt-2">
-              If you are a developer interested in liquidating your property.
-            </p>
-            <button className="mt-4 bg-blue-900 text-white px-6 py-2 rounded-md">
-              Sign up
-            </button>
-          </div>
+          <h3 className="text-xl font-bold">Become A Seller</h3>
+          <p className="text-sm mt-2">
+            If you are a developer interested in liquidating your property.
+          </p>
+          <button className="mt-4 bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+            Sign up
+          </button>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
+
+
+
+
+
+  
   const HelpWithInvestment = () => {
     return (
-      <div className="flex justify-between items-center bg-gradient-to-r from-white via-white to-yellow-100 p-6 rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-white via-white to-yellow-100 p-6 rounded-lg shadow-lg space-y-6 md:space-y-0">
+        {/* Title */}
         <h2 className="text-2xl font-bold text-blue-900">
           Need help with your investment?
         </h2>
-        <div className="flex space-x-6">
+        
+        {/* Support and Contact Options */}
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+          {/* Raise a Support Ticket */}
           <div className="flex items-center bg-white border border-yellow-400 rounded-md px-6 py-4 shadow-md">
-            <img
-              src="https://via.placeholder.com/40"
-              alt="Support Icon"
-              className="mr-4"
-            />
+            <FontAwesomeIcon icon={faTicketAlt} className="text-yellow-500 text-3xl mr-4" />
             <div>
               <h3 className="text-lg font-bold text-blue-900">
                 Raise a support ticket
               </h3>
             </div>
           </div>
+          
+          {/* Contact Us on Email */}
           <div className="flex items-center bg-white border border-yellow-400 rounded-md px-6 py-4 shadow-md">
-            <img
-              src="https://via.placeholder.com/40"
-              alt="Email Icon"
-              className="mr-4"
-            />
+            <FontAwesomeIcon icon={faEnvelope} className="text-yellow-500 text-3xl mr-4" />
             <div>
               <h3 className="text-lg font-bold text-blue-900">
                 Contact us on Email
@@ -87,6 +95,9 @@ const NotAnInvestor = () => {
       </div>
     );
   };
+  
+  
+  
 
 
 const locations = [
@@ -158,75 +169,75 @@ const locations = [
       </div>
     );
   };
-
-
-const features = [
-  {
-    id: 1,
-    title: "Start your investment journey by signing-up.",
-    buttonText: "Sign Up",
-    icon: "https://via.placeholder.com/50", // Replace with the golden arrow icon URL
-    link: "/signup", // Update with actual URL
-  },
-  {
-    id: 2,
-    title: "Read our FAQs to learn more about how Sanctum works.",
-    buttonText: "FAQs",
-    icon: "https://via.placeholder.com/50", // Replace with the golden question mark icon URL
-    link: "/faqs", // Update with actual URL
-  },
-  {
-    id: 3,
-    title: "Visit the 'About Us' page to learn more about our story and our people.",
-    buttonText: "About Us",
-    icon: "https://via.placeholder.com/50", // Replace with the golden handshake icon URL
-    link: "/about-us", // Update with actual URL
-  },
-];
-
-
-
-
-
-const LookingForSomethingElse = () => {
-  return (
-    <div className="bg-white py-10">
-      <div className="container mx-auto px-4 text-center">
-        {/* Title */}
-        <h2 className="text-3xl font-bold text-blue-900 mb-8">
-          Looking for something else?
-        </h2>
-
-        {/* Feature Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-          {features.map((feature) => (
-            <div
-              key={feature.id}
-              className="flex flex-col items-center text-center"
-            >
-              {/* Icon */}
-              <div className="bg-yellow-400 rounded-full p-4 mb-4">
-                <FontAwesomeIcon
-                  icon={feature.icon}
-                  className="text-white text-2xl"
-                />
+  
+  
+  const LookingForSomethingElse = () => {
+    return (
+      <div className="bg-white py-10">
+        <div className="container mx-auto px-4 text-center">
+          {/* Title */}
+          <h2 className="text-3xl font-bold text-blue-900 mb-8">
+            Looking for something else?
+          </h2>
+  
+          {/* Feature Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-yellow-400 rounded-full p-4 px-5 mb-4 h-auto w-auto">
+                <FontAwesomeIcon icon={faArrowRight} className="text-white text-1xl" />
               </div>
-              {/* Title */}
-              <p className="text-blue-900 mb-4">{feature.title}</p>
-              {/* Button */}
+              <p className="text-blue-900 mb-4">
+                Start your investment journey by signing-up.
+              </p>
               <a
-                href={feature.link}
+                href="/signup"
                 className="px-6 py-2 bg-white text-blue-900 border border-blue-900 rounded shadow hover:bg-blue-900 hover:text-white transition"
               >
-                {feature.buttonText}
+                Sign Up
               </a>
             </div>
-          ))}
+  
+            {/* Card 2 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-yellow-400 rounded-full p-3 px-4 w-auto h-auto mb-4">
+                <FontAwesomeIcon icon={faQuestionCircle} className="text-white text-2xl" />
+              </div>
+              <p className="text-blue-900 mb-4">
+                Read our FAQs to learn more about how Sanctum works.
+              </p>
+              <a
+                href="/faqs"
+                className="px-6 py-2 bg-white text-blue-900 border border-blue-900 rounded shadow hover:bg-blue-900 hover:text-white transition"
+              >
+                FAQs
+              </a>
+            </div>
+  
+            {/* Card 3 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-yellow-400 rounded-full p-4 mb-4">
+                <FontAwesomeIcon icon={faHandshake} className="text-white text-2xl" />
+              </div>
+              <p className="text-blue-900 mb-4">
+                Visit the 'About Us' page to learn more about our story and our people.
+              </p>
+              <a
+                href="/about-us"
+                className="px-6 py-2 bg-white text-blue-900 border border-blue-900 rounded shadow hover:bg-blue-900 hover:text-white transition"
+              >
+                About Us
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
+ 
+  
+  
+
 
   
 const OtherComponents = () => {
